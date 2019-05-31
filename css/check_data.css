@@ -1,0 +1,14 @@
+.topicpath {
+    text-align: left;
+}
+
+.table-block {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.table-block table {
+    width: 100%;
+}
