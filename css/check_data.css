@@ -27,6 +27,5 @@ table tr:nth-child(odd) td {
 .table-block table {
     width: 100%;
     text-align: center;
-    vertical-align: middle;
     border-color: #B9B9B9;
 }
