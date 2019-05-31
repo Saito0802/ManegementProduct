@@ -1,31 +1,82 @@
 @charset "UTF-8";
 
-.breadcrumb {
+.breadcrubs {
   padding-left:0;
   margin-left:0;
 }
 
-.breadcrumb li{
+.breadcrubs li{
   display:inline;/*横に並ぶように*/
   list-style: none;
   font-weight: bold;/*太字*/
 }
 
-.breadcrumb li:after {/* >を表示*/
+.breadcrubs li:after {/* >を表示*/
   content: '>';
   padding: 0 3px;
   color: #555;
 }
 
-.breadcrumb li:last-child:after {
+.breadcrubs li:last-child:after {
   content: '';
 }
 
-.breadcrumb li a {
+.breadcrubs li a {
   text-decoration: none;
   color: #52b5ee;/*色*/
 }
 
-.breadcrumb li a:hover {
+.breadcrubs li a:hover {
   text-decoration: underline;
+}
+
+.surround {
+	padding : 2px;
+	padding-right: 5px;
+	border : 1px solid;
+	border-color : black;
+	border-radius : 5px;
+	dispral : block;
+}
+
+.excelbutton{
+	color : white;
+	background-color : blue;
+}
+
+.no{
+	color : blue;
+}
+
+.yes{
+	color : red;
+}
+
+#result{
+width: 500px;
+height: 300px;
+}
+
+#info{
+width: 500px;
+height: 100px;
+}
+
+.positions{
+	position:absolute;
+	top:60px;
+	bottom:300px;
+	left:30%;
+}
+#testinfo{
+	position:absolute;
+	left:100px;
+}
+#choicebutton{
+	position:absolute;
+	left:500px;
+}
+#succesline{
+	position:absolute;
+	left:800px;
 }
