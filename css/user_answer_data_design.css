@@ -63,20 +63,19 @@ height: 100px;
 }
 
 .positions{
-	position:absolute;
-	top:60px;
-	bottom:300px;
-	left:30%;
+
+	margin-top:1000px;
+	margin-left:300px;
 }
-#testinfo{
+/* #testinfo{
 	position:absolute;
-	left:100px;
+	left:25px;
 }
 #choicebutton{
 	position:absolute;
-	left:500px;
+	left:400px;
 }
 #succesline{
 	position:absolute;
-	left:800px;
-}
+	left:550px;
+} */
