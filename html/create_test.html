@@ -9,11 +9,16 @@
 <body>
     <div id="header">
     </div>
+
+    <div class="topicpath">
+        <!--パンくずリスト-->
+        <ul>
+            <li><a href="">Top</a></li>
+            <li>></li>
+            <li><a href="">テスト作成</a></li>
+        </ul>
+    </div>
     <div class="my-body">
-        <div class="topicpath">
-            <!--パンくずリスト-->
-            <a href="">Top</a>><a href="">テスト作成</a>
-        </div>
         <div class="input-block">
             <!-- インプットする部分 -->
             <div class="input-block__test-set">
@@ -23,8 +28,13 @@
                 <span>合格ライン :</span><input type="text" size="1">%
             </div>
             <div class="input-block__test-period">
-                <span>開催期間 :</span><input type="text" class="datepicker">～<input type="text" class="datepicker"> 選択しない
-                <input type="checkbox">
+                <span>開催期間 :</span>
+                <input type="text" size="6" class="datepicker">
+                <span>～</span>
+                <input type="text" size="6" class="datepicker">
+                <span id="input-block__choice-checkbox">
+                    選択しない:<input type="checkbox">
+                </span>
             </div>
             <div class="input-block__select-button">
                 <button>決定</button>

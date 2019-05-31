@@ -1,29 +1,45 @@
-    .my-body {
-        position: absolute;
-        top: 70px;
-    }
-    
-    .topicpath {
-        text-align: left;
-    }
-    
-    .input-block {
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .input-block__select-button {
-        text-align: right;
-    }
-    
-    .table-block {
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    
-    .table-block table {
-        width: 100%;
-    }
+table td {
+    background: #C9DAF8;
+}
+
+table tr:nth-child(odd) td {
+    background: #fff;
+}
+
+.topicpath {
+    text-align: left;
+    position: absolute;
+    top: 70px;
+}
+
+.my-body {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+}
+
+.input-block {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-block__select-button {
+    text-align: right;
+}
+
+#input-block__choice-checkbox {
+    padding-left: 10px;
+}
+
+.table-block {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.table-block table {
+    width: 100%;
+    border-color: #B9B9B9;
+}
