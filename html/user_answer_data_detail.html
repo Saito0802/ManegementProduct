@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+	<link rel = "stylesheet" href = "../css/common.css">
 	<link rel = "stylesheet" href = "../css/user_answer_data_design.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script>
@@ -23,7 +24,7 @@
 
     <!-- パンくずリスト -->
 	<nav>
-		<ol class = "breadcrubs">
+		<ol class="breadcrumbs">
 			<li class = "breada"><a href = "" class = "breadb">Top</a></li>
 			<li class = "breada"><a href = "" class = "breadb">データ確認</a></li>
 			<li class = "breada"><a href = "" class = "breadb">ユーザ解答データ</a></li>
@@ -36,7 +37,7 @@
 
 
 
-	テストセット名：<input style = "border-width:0px; border-style:None; backgroundcolor:rgba(0,0,0,0);" type = text name = "testname" value = "テストセット１" >
+	テストセット名：<input type = text id = "testname" value = "テストセット１" >
 
 
     <p style="line-height : 170%;"></p>
@@ -60,12 +61,13 @@
 
 
 
-	<p style="line-height : 170%;"></p>
+	<p style="line-height : 300%;"></p>
 
-    <table align = "center" id = "info">
+
+    <table id = "info">
 	    <tr>
 	    	<td>
-				<table border="1" cellpadding="5" cellspacing="0" style = "float:left">
+				<table border="1" cellpadding="5" cellspacing="0" style = "float:left" id = "infonames">
 					<tr>
 						<th>社員番号 ： </th>
 						<td>000001</td>
@@ -73,6 +75,30 @@
 					<tr>
 						<th>社員名 ： </th>
 						<td>山田太郎</td>
+					</tr>
+				</table>
+			</td>
+ 		    <td>
+				<table style = "float:left">
+					<tr>
+						<th>　　</th>
+						<td>　　</td>
+					</tr>
+					<tr>
+						<th>　　</th>
+						<td>　　</td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table style = "float:left">
+					<tr>
+						<th>　　</th>
+						<td>　　</td>
+					</tr>
+					<tr>
+						<th>　　</th>
+						<td>　　</td>
 					</tr>
 				</table>
 			</td>
@@ -91,7 +117,7 @@
 			<td>
 
 				<table>
-					<tr><td><input type = "button" value = "Excel 出力" class = "excelbutton" id = "jqu"></td></tr>
+					<tr><td><input type = "button" value = "Excel 出力" class = "excelbutton"></td></tr>
 				</table>
 			</td>
 

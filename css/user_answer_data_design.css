@@ -36,12 +36,21 @@
 	border : 1px solid;
 	border-color : black;
 	border-radius : 5px;
-	dispral : block;
+	disprai : block;
 }
 
 .excelbutton{
-	color : white;
-	background-color : blue;
+ width:200px;
+ height:80px;
+ line-height:30px;
+ text-align:center;
+ display:inline-block;
+ background:#3C78D8;
+ color:white;
+ font-size:20px;
+ border-radius:5px;
+ text-decoration:none;
+ margin-right:10px;
 }
 
 .no{
@@ -52,30 +61,68 @@
 	color : red;
 }
 
-#result{
-width: 500px;
-height: 300px;
-}
-
-#info{
+/* #info{
 width: 500px;
 height: 100px;
+margin-left:10px;
+} */
+
+#infonames{
+    margin-left:100px;
+}
+#infonames th{
+	width:200px;
+	height:60px;
+}
+#infonames td{
+	width:200px;
+	height:60px;
 }
 
-.positions{
-
-	margin-top:1000px;
-	margin-left:300px;
+#result{
+/* width: 500px;
+height: 300px; */
+margin-left:100px;
+font-size:20px;
 }
-/* #testinfo{
-	position:absolute;
-	left:25px;
+
+#result th{
+width: 80px;
+height: 80px;
+}
+
+#result td{
+width: 80px;
+height: 80px;
+}
+
+
+
+
+
+.positionsinfo{
+	margin-top:70px;
+	margin-left:0px;
+}
+#testinfo{
+/* 	position:absolute;
+	left:25px; */
 }
 #choicebutton{
-	position:absolute;
-	left:400px;
+/* 	position:absolute;
+	left:400px; */
+	margin-left:10px;
 }
 #succesline{
-	position:absolute;
-	left:550px;
-} */
+/* 	position:absolute;
+	left:550px; */
+	margin-left:0px;
+}
+
+#testname{
+	font-size:20px;
+	border-width:0px;
+	border-style:None;
+	backgroundcolor:rgba(0,0,0,0);
+}
+
