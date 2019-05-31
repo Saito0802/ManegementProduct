@@ -7,14 +7,12 @@
 </head>
 
 <body>
-    <div id="header">
-    </div>
-
-    <div class="topicpath">
+    <div id="header"></div>
+    <div id="header_space"></div>
+    <div class="breadcrumbs">
         <!--パンくずリスト-->
         <ul>
             <li><a href="">Top</a></li>
-            <li>></li>
             <li><a href="">テスト作成</a></li>
         </ul>
     </div>
@@ -87,10 +85,12 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
     <link rel="stylesheet" href="../css/create_test.css">
+    <link rel="stylesheet" href="../css/common.css">
     <script>
         $(function() {
             $(".datepicker").datepicker();
             $("#header").load("header.html");
+            $("#header_space").load("header.html");
         });
     </script>
 </body>
