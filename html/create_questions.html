@@ -2,13 +2,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<title>問題作成</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" >
 <link rel="stylesheet" href="../css/common.css">
 <link rel="stylesheet" href="../css/create_questions.css">
 <script>
 $(function() {
     $("#header").load("header.html");
+    $("#datepicker").datepicker();
 });
 </script>
 
@@ -23,7 +27,56 @@ $(function() {
 	<li><a href="">テスト作成</a></li>
 	<li><a href="">問題作成</a></li>
 </ul>
+<form action="">
+<div id="create_quetions">
+<div>
+		<label for="testset_name">テストセット名 ：</label>
+		<input type="text" name="testset_name" size="30" id="testset_name"><br>
+	</div>
 
+	<div>
+		<label for="pass_line">合格ライン ：</label>
+		<input type="text" name="pass_line" size="5" id="pass_line"><br>
+	</div>
+
+	<div id="opening_period">
+		<label for="period">開催期間 ：</label>
+		<input type="text" name="period" size="10" id="datepicker">
+		<label for="period2"> ～ </label>
+		<input type="text" name="period2" size="10" id="datepicker">
+		<input type="checkbox" name="select_out" value="0" >選択しない
+		<br>
+	</div>
+
+	<input type="button" value="決定" ><br>
+</div>
+
+	<table border="1">
+	<thead>
+		<tr>
+			<th ></th>
+			<th></th>
+			<th>テストセット名</th>
+			<th>合格ライン</th>
+			<th></th>
+		</tr>
+	</thead>
+  <tr>
+    <td><input type="button" value="コピー" ></td>
+    <td><input type="button" value="編集" ></td>
+    <td><a href="">テストセット1</a></td>
+    <td>80%</td>
+    <td><input type="button" value="編集" ></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="コピー" ></td>
+    <td><input type="button" value="編集" ></td>
+    <td><a href="">テストセット2</a></td>
+    <td>80%</td>
+    <td><input type="button" value="編集" ></td>
+  </tr>
+</table>
+</form>
 
 </body>
 </html>
