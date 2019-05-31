@@ -1,10 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
 
+<head>
+    <meta charset="UTF-8">
+    <title>Create Test 2</title>
+</head>
+
+<body>
+    <div class="topicpath">
+        <!--パンくずリスト-->
+        <a href="">Top</a>><a href="">テスト作成</a>
+    </div>
+    <div class="input-block">
+        <!-- インプットする部分 -->
+        <div class="input-block__test-set">
+            <span>テストセット名 :</span><input type="text">
+        </div>
+        <div class="input-block__test-border">
+            <span>合格ライン :</span><input type="text" size="1">%
+        </div>
+        <div class="input-block__test-period">
+            <span>開催期間 :</span><input type="text" class="datepicker">～<input type="text" class="datepicker"> 選択しない
+            <input type="checkbox">
+        </div>
+        <div class="input-block__select-button">
+            <button>決定</button>
+        </div>
+    </div>
+    <div class="table-block">
+        <!-- テーブル部分 -->
+        <table frame="border" rules="all">
+            <tr>
+                <th></th>
+                <th></th>
+                <th>テストセット名</th>
+                <th>合格ライン</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><button>コピー</button></td>
+                <td><button>編集</button></td>
+                <td><a href="">Pマークテスト2018</a></td>
+                <td>80%</td>
+                <td><button>削除</button></td>
+            </tr>
+            <tr>
+                <td><button>コピー</button></td>
+                <td><button>編集</button></td>
+                <td><a href="">Pマークテスト2019</a></td>
+                <td>80%</td>
+                <td><button>削除</button></td>
+            </tr>
+            <tr>
+                <td><button>コピー</button></td>
+                <td><button>編集</button></td>
+                <td></td>
+                <td></td>
+                <td><button>削除</button></td>
+            </tr>
+            <tr>
+                <td><button>コピー</button></td>
+                <td><button>編集</button></td>
+                <td></td>
+                <td></td>
+                <td><button>削除</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="../css/create_test.css">
+    <script>
+        $(function() {
+            $(".datepicker").datepicker();
+        });
+    </script>
 </body>
+
 </html>
