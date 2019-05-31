@@ -5,31 +5,36 @@
 <title>Insert title here</title>
 	<link rel = "stylesheet" href = "../css/user_answer_data_design.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!--     <script>
+	<script>
+
+			$(function (){
+				$('#header').load("./header.html");
+           	 });
 
 
-        $(function (){
-            $(jqu).on('click',function(){
-      	$('<p>さいとうくん</p>').insertAfter('#choicebutton');
-            });
-		  });
-        </script> -->
+
+    </script>
 </head>
 <body>
+<div id = "header"></div>
+
+
+<div class = "positionsinfo">
+
     <!-- パンくずリスト -->
 	<nav>
 		<ol class = "breadcrubs">
-			<li><a href = "">Top</a></li>
-			<li><a href = "">データ確認</a></li>
-			<li><a href = "">ユーザ解答データ</a></li>
-			<li><a href = "">ユーザ解答詳細データ</a></li>
+			<li class = "breada"><a href = "" class = "breadb">Top</a></li>
+			<li class = "breada"><a href = "" class = "breadb">データ確認</a></li>
+			<li class = "breada"><a href = "" class = "breadb">ユーザ解答データ</a></li>
+			<li class = "breada"><a href = "" class = "breadb">ユーザ解答詳細データ</a></li>
 		</ol>
 	</nav>
 
 
-	<p style="line-height : 170%;"></p>
+<p style="line-height : 170%;"></p>
 
-	<div class = "positionsinfo">
+
 
 	テストセット名：<input style = "border-width:0px; border-style:None; backgroundcolor:rgba(0,0,0,0);" type = text name = "testname" value = "テストセット１" >
 
@@ -145,7 +150,6 @@
 			<td class = "yes">〇</td>
 		</tr>
 	</table>
-	<input type = "text" id = "jqui">
 
 	</div>
 
