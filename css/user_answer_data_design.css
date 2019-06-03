@@ -12,6 +12,7 @@
 	position: fixed;
     top: 110px;
     left: 80px;
+    font-size: 20px;
 }
 
 .choiseinfo{
@@ -83,10 +84,16 @@
     left: 780px;
 }
 /* テスト詳細結果の表 */
-#result{
-	position: fixed;
+
+#result-data{/* 表の内容　スクロール可能 */
+   	position: fixed;
     top: 380px;
     left: 240px;
+    overflow: auto;
+    height:250px;
+}
+
+#result{
     font-size:20px;
 }
 

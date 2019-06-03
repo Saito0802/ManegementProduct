@@ -6,11 +6,16 @@
 	margin-left:0px;
 }
 
+/* html {
+  font-size: 20px;
+} */
+
 /* 選択したテストセット名表示 */
 #testname-comments{
 	position: fixed;
     top: 120px;
     left: 80px;
+    font-size: 20px;
 }
 
 /* 選択された内容を表示するテキストボックス　枠なし */
