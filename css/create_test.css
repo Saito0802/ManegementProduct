@@ -6,12 +6,6 @@ table tr:nth-child(odd) td {
     background: #fff;
 }
 
-.topicpath {
-    text-align: left;
-    position: absolute;
-    top: 70px;
-}
-
 .my-body {
     position: absolute;
     top: 150px;

@@ -6,12 +6,6 @@ table tr:nth-child(odd) td {
     background: #fff;
 }
 
-.my-body {
-    position: absolute;
-    top: 150px;
-    width: 100%;
-}
-
 .table-block {
     width: 70%;
     margin-left: auto;
