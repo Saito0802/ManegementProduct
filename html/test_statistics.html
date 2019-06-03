@@ -23,72 +23,72 @@
     <div class="my-body">
         <div class="select-block">
             <div class="testset-display">
-                <span>テストセット</span>
-                <span>Pマーク2019</span>
-            </div>
-            <div>
-                <form>
-                    <input type="radio" name=>
-                    <input type="radio">
+                <form class="select-block__form">
+                    <div class="select-block__testset">
+                        <span>テストセット</span>
+                        <span>Pマーク2019</span>
+                    </div>
+                    <div class="select-block__radio">
+                        <span>初回<input type="radio" name="old"></span>
+                        <span>最新<input type="radio" name="new"></span>
+                        <div>
                 </form>
-
-            </div>
-        </div>
-        <div class="table-block">
-            <!-- テーブル部分 -->
-            <table frame="border" rules="all">
-                <thead>
-                    <tr>
-                        <th>問題ID</th>
-                        <th>全社員</th>
-                        <th>東京本社</th>
-                        <th>大阪支社</th>
-                        <th>金沢支社</th>
-                        <th>名古屋支社</th>
-                        <th>静岡ブランチ</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>問題1</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>問題2</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>問題3</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
-    <script>
-        $(function() {
-            $("#header").load("header.html");
-            $("#header_space").load("header.html");
-        });
-    </script>
+                </div>
+                <div class="table-block">
+                    <!-- テーブル部分 -->
+                    <table class="display-table">
+                        <thead>
+                            <tr>
+                                <th>問題ID</th>
+                                <th>全社員</th>
+                                <th>東京本社</th>
+                                <th>大阪支社</th>
+                                <th>金沢支社</th>
+                                <th>名古屋支社</th>
+                                <th>静岡ブランチ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>問題1</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>問題2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>問題3</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+                <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+                <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+                <script>
+                    $(function() {
+                        $("#header").load("header.html");
+                        $("#header_space").load("header.html");
+                    });
+                </script>
 </body>
 
 </html>

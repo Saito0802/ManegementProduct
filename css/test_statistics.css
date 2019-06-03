@@ -13,7 +13,13 @@
     border-collapse: collapse;
 }
 
-.input-block {
+.my-body {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+}
+
+.select-block {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
