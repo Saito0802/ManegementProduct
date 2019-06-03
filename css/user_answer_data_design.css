@@ -55,7 +55,7 @@
 	position: fixed;
     top: 175px;
     left: 575px;
-    min-width:200px;
+    min-width:20px;
 }
 
 /* 合格設定ライン */
@@ -63,7 +63,7 @@
 	position: fixed;
     top: 175px;
     left: 788px;
-    min-width:200px;
+    min-width:20px;
 }
 
 /* 各情報を囲むレイアウト */
