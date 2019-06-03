@@ -6,10 +6,6 @@
 	margin-left:0px;
 }
 
-/* html {
-  font-size: 20px;
-} */
-
 /* 選択したテストセット名表示 */
 #testname-comments{
 	position: fixed;
@@ -26,10 +22,18 @@
 	backgroundcolor:rgba(0,0,0,0);
 }
 
+.choiseinfo-date{/* 日付は文字位置を真ん中 */
+	font-size:20px;
+	border-width:0px;
+	border-style:None;
+	backgroundcolor:rgba(0,0,0,0);
+	text-align:center;
+}
+
 /* 公開設定期間 */
 #testinfo-comments{
 	position: fixed;
-    top: 130px;
+    top: 135px;
     left: 520px;
 }
 
