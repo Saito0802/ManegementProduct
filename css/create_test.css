@@ -10,6 +10,14 @@
     margin-right: auto;
 }
 
+.input-block__test-border {
+    margin-left: 3.3%;
+}
+
+.input-block__test-period {
+    margin-left: 5%;
+}
+
 .input-block__select-button {
     text-align: right;
 }
