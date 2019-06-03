@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<link rel = "stylesheet" href = "../css/common.css">
+	<link rel = "stylesheet" href = "../css/comments_design.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+
+		$(function (){
+			$('#header').load("./header.html");
+       	});
+
+
+
+    </script>
+</head>
+<body>
+
+	<!-- ヘッド読み込み -->
+	<div id = "header"></div>
+
+	<!-- 以下ページ内容 -->
+	<div class = "positionsinfo">
+
+
+	    <!-- パンくずリスト -->
+		<nav>
+			<ul class="breadcrumbs">
+				<li><a href = "" >Top</a></li>
+				<li><a href = "" >データ確認</a></li>
+				<li><a href = "" >意見要望</a></li>
+			</ul>
+		</nav>
+
+		<!-- 選択したテストセット名の表示 -->
+		<p id = "testname-comments">テストセット名：　　<input type = "text" class = "choiseinfo" value = "テストセット１" ></p>
+
+		<!-- 公開設定期間表示 -->
+
+		<span class = "surround" id = "testinfo-comments" >
+	    　<input type = "text"  class = "choiseinfo" value = "2019/05/28" style="width:120px;">
+	    　～　<input type = "text"  class = "choiseinfo" value =" 2019/06/11" style="width:120px;">
+	    　
+		</span>
+
+		<table border="1" cellpadding="5" cellspacing="0" id = "infocomments">
+			<tr>
+				<th class = "infocomments-number">社員番号</th>
+				<th class = "infocomments-name">社員名</th>
+				<th class = "infocomments-comments">意見・要望</th>				</tr>
+		</table>
+
+        <div id = "infocomments-data">
+			<table border="1" cellpadding="5" cellspacing="0">
+				<tr>
+					<td class = "infocomments-number"></td>
+					<td class = "infocomments-name"></td>
+					<td class = "infocomments-comments"></td>
+				</tr>
+				<tr>
+					<td class = "infocomments-number"></td>
+					<td class = "infocomments-name"></td>
+					<td class = "infocomments-comments"></td>
+				</tr>
+				<tr>
+					<td class = "infocomments-number"></td>
+					<td class = "infocomments-name"></td>
+					<td class = "infocomments-comments"></td>
+				</tr>
+				<tr>
+					<td class = "infocomments-number"></td>
+					<td class = "infocomments-name"></td>
+					<td class = "infocomments-comments"></td>
+				</tr>
+				<tr>
+					<td class = "infocomments-number"></td>
+					<td class = "infocomments-name"></td>
+					<td class = "infocomments-comments"></td>
+				</tr>
+				<tr>
+					<td class = "infocomments-number"></td>
+					<td class = "infocomments-name"></td>
+					<td class = "infocomments-comments"></td>
+				</tr>
+				<tr>
+					<td class = "infocomments-number"></td>
+					<td class = "infocomments-name"></td>
+					<td class = "infocomments-comments"></td>
+				</tr>
+				<tr>
+					<td class = "infocomments-number"></td>
+					<td class = "infocomments-name"></td>
+					<td class = "infocomments-comments"></td>
+				</tr><tr>
+					<td class = "infocomments-number"></td>
+					<td class = "infocomments-name"></td>
+					<td class = "infocomments-comments"></td>
+				</tr><tr>
+					<td class = "infocomments-number"></td>
+					<td class = "infocomments-name"></td>
+					<td class = "infocomments-comments"></td>
+				</tr>
+			</table>
+		</div>
+
+
+        <p id = "btn-excel-place">
+		<a href="" class="btn-excel">  Excel 出力</a>
+		</p>
+
+
+
+	</div>
+
+
+</body>
+</html>
+
+
+
+

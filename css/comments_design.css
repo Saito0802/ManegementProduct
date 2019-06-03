@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/* ヘッダー以下の表示内容の位置固定 */
+.positionsinfo{
+	margin-top:70px;
+	margin-left:0px;
+}
+
+
+/* 選択したテストセット名表示 */
+#testname-comments{
+	position: fixed;
+    top: 120px;
+    left: 80px;
+}
+
+.choiseinfo{
+	font-size:20px;
+	border-width:0px;
+	border-style:None;
+	backgroundcolor:rgba(0,0,0,0);
+}
+
+/* 公開設定期間 */
+#testinfo-comments{
+	position: fixed;
+    top: 130px;
+    left: 520px;
+}
+
+/* 各情報を囲むレイアウト */
+.surround {
+	padding : 2px;
+	padding-right: 10px;
+	border : 1px solid;
+	border-color : black;
+	border-radius : 5px;
+	disprai : block;
+	font-size:20px;
+}
+
+
+/* 表の位置・幅 */
+#infocomments{
+	position: fixed;
+    top: 200px;
+    left: 150px;
+}
+
+#infocomments-data{
+	position: fixed;
+    top: 252px;
+    left: 150px;
+    overflow: auto;
+    height:300px;
+}
+
+.infocomments-number{
+	width:120px;
+	height:40px;
+}
+.infocomments-name{
+	width:180px;
+	height:40px;
+}
+.infocomments-comments{
+	width:480px;
+	height:40px;
+}
+
+/* Excel出力ボタンの位置 */
+#btn-excel-place{
+	position: fixed;
+    top: 540px;
+    left: 780px;
+}
+
+/* Excel出力ボタン */
+a.btn-excel{
+  padding: 0.5em;
+  margin: 10px 0;
+  display: block;
+  color: #fff !important;
+  background: #3C78D8;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:16px;
+  border-radius: 10px;
+  text-align:center;
+  text-decoration:none !important;
+}
+a.btn-excel:before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: -3px 5px 0 0;
+  background: url("../img/excel_icon.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+a.btn-excel:hover {
+    background: #FFCE71;
+}
+
+@media screen and (min-width: 768px){
+  a.btn-excel{
+   /*  padding: 0.5em 2em; */
+    padding: 0.5em 0.8em;
+    margin: 10px auto;
+    font-size:20px;
+    display:inline-block;
+    }
+  a.btn-excel:before {
+        margin: -3px 10px 0 0;
+    }
+}
