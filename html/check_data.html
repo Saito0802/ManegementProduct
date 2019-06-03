@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="../css/check_data.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <meta charset="UTF-8">
+    <title>Check Data 5</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="header_space"></div>
+    <div class="breadcrumbs">
+        <!--パンくずリスト-->
+        <ul>
+            <li><a href="./management_top.html">Top</a></li>
+            <li><a href="./check_data.html">データ確認</a></li>
+        </ul>
+    </div>
+    <div class="my-body">
+
+        <div class="table-block">
+            <!-- テーブル部分 -->
+            <table class="display-table">
+                <thead>
+                    <tr>
+                        <th>テストセット名</th>
+                        <th>開催期間 開始</th>
+                        <th>～終了</th>
+                        <th>合格人数/全社員</th>
+                        <th>正解率</th>
+                        <th>ユーザ解答データ</th>
+                        <th>意見要望</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>テストセット1</td>
+                        <td>2019/05/28</td>
+                        <td>2019/05/29</td>
+                        <td>100/200</td>
+                        <td><button onclick="location.href='./test_statistics.html'">統計</button></td>
+                        <td><button onclick="location.href='./users_answer_data.html'">詳細</button></td>
+                        <td><button onclick="location.href='./comments.html'">一覧</button></td>
+                    </tr>
+                    <tr>
+                        <td>テストセット2</td>
+                        <td>2019/05/30</td>
+                        <td>2019/06/04</td>
+                        <td>0/200</td>
+                        <td><button onclick="location.href='./test_statistics.html'">統計</button></td>
+                        <td><button onclick="location.href='./users_answer_data.html'">詳細</button></td>
+                        <td><button onclick="location.href='./comments.html'">一覧</button></td>
+                    </tr>
+                    <tr>
+                        <td>テストセット3</td>
+                        <td></td>
+                        <td></td>
+                        <td>0/200</td>
+                        <td><button onclick="location.href='./test_statistics.html'">統計</button></td>
+                        <td><button onclick="location.href='./users_answer_data.html'">詳細</button></td>
+                        <td><button onclick="location.href='./comments.html'">一覧</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button onclick="location.href='./test_statistics.html'">統計</button></td>
+                        <td><button onclick="location.href='./users_answer_data.html'">詳細</button></td>
+                        <td><button onclick="location.href='./comments.html'">一覧</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+
+
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#header_space").load("header.html");
+        });
+    </script>
+</body>
+
+</html>
