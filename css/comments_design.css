@@ -45,6 +45,8 @@
 	position: fixed;
     top: 200px;
     left: 150px;
+    border: 1px solid #B9B9B9;
+    border-collapse: collapse
 }
 
 #infocomments-data{/* 表の内容　スクロール可能 */
