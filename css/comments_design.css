@@ -6,10 +6,13 @@
 	margin-left:0px;
 }
 
+input {
+    vertical-align : middle;
+}
 /* 選択したテストセット名表示 */
 #testname-comments{
 	position: fixed;
-    top: 120px;
+    top: 110px;
     left: 80px;
     font-size: 20px;
 }
@@ -20,6 +23,7 @@
 	border-width:0px;
 	border-style:None;
 	backgroundcolor:rgba(0,0,0,0);
+	min-width:20px;
 }
 
 .choiseinfo-date{/* 日付は文字位置を真ん中 */
@@ -28,13 +32,15 @@
 	border-style:None;
 	backgroundcolor:rgba(0,0,0,0);
 	text-align:center;
+	min-width:20px;
 }
 
 /* 公開設定期間 */
 #testinfo-comments{
 	position: fixed;
-    top: 135px;
+    top: 130px;
     left: 520px;
+    min-width:500px;
 }
 
 /* 各情報を囲むレイアウト */
@@ -45,7 +51,7 @@
 	border-color : black;
 	border-radius : 5px;
 	disprai : block;
-	font-size:20px;
+	font-size:10px;
 }
 
 
@@ -69,25 +75,25 @@
 }
 
 .infocomments-number{/* 従業員番号の列 */
-	width:170px;
+	min-width:170px;
 	height:40px;
 }
 .infocomments-name{/* 従業員の名前の列 */
-	width:180px;
+	min-width:180px;
 	height:40px;
 }
 .infocomments-comments{/* 意見要望の列 */
-	width:560px;
+	min-width:560px;
 	height:40px;
 }
 
  #infocomments-data .infocomments-number{従業員番号の列 見出し以外は右寄せ
-	width:170px;
+	min-width:170px;
 	height:40px;
 	text-align:center;
 }
 #infocomments-data .infocomments-name{従業員の名前の列 見出し以外は真ん中
-	width:220px;
+	min-width:220px;
 	height:40px;
 	text-align:center;
 }
