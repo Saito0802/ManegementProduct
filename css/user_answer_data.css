@@ -1,0 +1,96 @@
+@charset "UTF-8";
+#mybody{
+	position:absolute;
+	display:block;
+	width:100%;
+}
+
+#setting{
+	background: #cfe2f3;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;;
+	padding: 20px;
+	margin: auto;
+	width: 70%;
+
+}
+
+#data,#question,#info,#info2,#info3{
+	margin-right: 10px;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+
+.selectdiv {
+  	position: relative;
+	margin-top: -15px;
+	margin-right:10px;
+	float: left;
+	min-width: 150px;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+	display: none;
+}
+
+.selectdiv:after {
+  content: '<>';
+  font: 17px "Consolas", monospace;
+  color: #333;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 11px;
+  /*Adjust for position however you want*/
+
+  top: 13px;
+  padding: 0 0 2px;
+  border-bottom: 1px solid #999;
+  /*left line */
+
+  position: absolute;
+  pointer-events: none;
+}
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Add some styling */
+
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+  margin: 5px 0px;
+  padding: 0px 15px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+
+#my-table{
+	margin: auto;
+	width: 70%;
+}
+
+table{
+	text-align: center;
+}
+
+.btn-excel{
+	float: right;
+}

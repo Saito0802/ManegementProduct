@@ -3,7 +3,7 @@
 #header_body {
   margin: 0;
   padding: 0;
-  background: white;
+  background: #ffffff;
 }
 
 #header_nav {
@@ -39,24 +39,25 @@ nav #header_ul li[id="logout"] {
 	float: right;
 }
 
-.header_a {
+a.header_a {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color : white;
+  color: white;
 }
-.header_a::after {
-  bottom: 4px;
+a.header_a::after {
+  position: absolute;
+  bottom: 2px;
   left: 0;
   content: '';
   width: 100%;
   height: 2px;
-  background: white;
+  background: #ffffff;
   transform: scale(0, 1);
   transform-origin: center top;
   transition: transform .3s;
 }
-.header_a:hover::after {
+a.header_a:hover::after {
   transform: scale(1, 1);
 }
 
