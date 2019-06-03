@@ -36,16 +36,14 @@
 		</nav>
 
 		<!-- 選択したテストセット名の表示 -->
-		<p id = "testname">テストセット名：　　<input type = text id = "choisetestname" value = "テストセット１" ></p>
+		<p id = "testname">テストセット名：　　<input type = "text" class = "choiseinfo" value = "テストセット１" ></p>
 
-	    <p style="line-height : 170%;"></p>
 
 		<!-- 公開設定期間表示 -->
-	    <span>　</span><span class = "surround" id = "testinfo">
-	    公開設定期間　2019/05/28 ～ 2019/06/11
+	    <span class = "surround" id = "testinfo">
+	    公開設定期間 <input type = "text"  class = "choiseinfo" value = "2019/05/28 ～ 2019/06/11">
 		</span>
 
-		　　　
 
 		<!-- 初回か最新かチェックするラジオボタン -->
 		<span class = "surround" id = "choicebutton">
@@ -53,11 +51,9 @@
 	    <input type = "radio" name = "choise" value = "最新">最新
 		</span>
 
-		　　　
-
 		<!-- 合格基準を表示 -->
 		<span class = "surround" id = "succesline">
-	    合格ライン　80 %
+	    合格ライン <input type = "text"  class = "choiseinfo" value = "80" style="width:30px;"> %
 		</span>
 
 		<table>
