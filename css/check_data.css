@@ -2,7 +2,7 @@ table td {
     background: #C9DAF8;
 }
 
-table tr:nth-child(odd) td {
+table tr:nth-child(even) td {
     background: #fff;
 }
 

@@ -1,9 +1,30 @@
-table td {
-    background: #C9DAF8;
+.display-table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-table tr:nth-child(odd) td {
+.display-table th {
+    border: 1px solid #B9B9B9;
+}
+
+.display-table td {
+    background: #C9DAF8;
+    border: 1px solid #B9B9B9;
+    border-collapse: collapse;
+}
+
+.display-table tr:nth-child(even) td {
     background: #fff;
+}
+
+button {
+    background: #4A86E8;
+    color: #FFF;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 
 .my-body {
@@ -31,9 +52,4 @@ table tr:nth-child(odd) td {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
-
-.table-block table {
-    width: 100%;
-    border-color: #B9B9B9;
 }
