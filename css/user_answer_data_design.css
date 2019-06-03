@@ -55,6 +55,7 @@
 	position: fixed;
     top: 175px;
     left: 575px;
+<<<<<<< HEAD
     min-width:20px;
 }
 
@@ -64,6 +65,17 @@
     top: 175px;
     left: 788px;
     min-width:20px;
+=======
+    min-width:200px;
+}
+
+/* 合格設定ライン */
+#succesline{
+	position: fixed;
+    top: 175px;
+    left: 788px;
+    min-width:200px;
+>>>>>>> refs/remotes/origin/saito
 }
 
 /* 各情報を囲むレイアウト */
