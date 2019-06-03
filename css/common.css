@@ -1,8 +1,11 @@
 @charset "UTF-8";
+
+/* ヘッダー後スペース */
 #header_space{
 	margin-top: 70px;
 }
 
+/* パンくずリストスタイル */
 .breadcrumbs *, .breadcrumbs *:after, .breadcrumbs *:before {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -51,4 +54,80 @@
 }
 .breadcrumbs li:last-child::before {
 	content: normal;
+}
+
+/* テーブルデザイン */
+.display-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.display-table th {
+    border: 1px solid #B9B9B9;
+}
+
+.display-table td {
+    background: #C9DAF8;
+    border: 1px solid #B9B9B9;
+    border-collapse: collapse;
+}
+
+.display-table tr:nth-child(even) td {
+    background: #fff;
+}
+
+/* ボタンデザイン */
+button {
+    background: #6D9EEB;
+    color: #FFF;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding-top:3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Excel出力ボタン */
+a.btn-excel{
+  padding: 0.5em;
+  margin: 10px 0;
+  display: block;
+  color: #fff !important;
+  background: #3C78D8;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:16px;
+  border-radius: 10px;
+  text-align:center;
+  text-decoration:none !important;
+}
+a.btn-excel:before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: -3px 5px 0 0;
+  background: url("../img/excel_icon.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+a.btn-excel:hover {
+    background: #FFCE71;
+}
+
+@media screen and (min-width: 700px){
+  a.btn-excel{
+   /*  padding: 0.5em 2em; */
+    padding: 0.5em 0.8em;
+    margin: 10px auto;
+    font-size:20px;
+    display:inline-block;
+    }
+  a.btn-excel:before {
+        margin: -3px 10px 0 0;
+    }
 }

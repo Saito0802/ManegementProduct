@@ -1,1 +1,28 @@
 @charset "UTF-8";
+#input_quetion{
+	background: #cfe2f3;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	padding: 20px;
+}
+
+#tag{
+	margin-left: 440px;
+}
+#choices input[type="checkbox"]{
+
+}
+
+#create_button{
+	margin-top: 5px;
+}
+
+#confirmation{
+	margin-top: 10px;
+	float: right;
+}
+
+table{
+	text-align: center;
+}

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+#confirm{
+	background: #cfe2f3;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin-left:200px;
+	margin-right:200px;
+	margin-top:100px;
+	padding: 20px;
+}
+
+#confirm_test_button{
+	text-align: right;
+	margin-right: 220px;
+}

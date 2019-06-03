@@ -2,13 +2,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<title>問題作成</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" >
 <link rel="stylesheet" href="../css/common.css">
 <link rel="stylesheet" href="../css/create_questions.css">
 <script>
 $(function() {
     $("#header").load("header.html");
+    $("#datepicker").datepicker();
 });
 </script>
 
@@ -23,7 +27,63 @@ $(function() {
 	<li><a href="">テスト作成</a></li>
 	<li><a href="">問題作成</a></li>
 </ul>
+<form action="">
+<div id="input_quetion">
+		<label for="testset_name">テストセット名 ：</label>
+		テストセット1<br>
 
+	<div>
+		<label for="question"> 問題文   ：</label><br>
+		<textarea name="question" rows="2" cols="100" id="question"></textarea><br>
+		<label for="remarks">備考 ：</label><br>
+		<textarea name="question"  rows="2" cols="100" id="remarks"></textarea>
+	</div>
+
+	<div id="choices">
+		<label for="choice1">選択肢1　</label>正答チェック<input type="checkbox"><br>
+			<textarea name="question" rows="3" cols="100" id="choice1"></textarea><br>
+		<label for="choice2">選択肢2　</label>正答チェック<input type="checkbox"><br>
+			<textarea name="question" rows="3" cols="100" id="choice2"></textarea>
+	</div>
+		<button>－</button>
+		<button>＋</button>
+	<div id="create_button" align="right">
+		<button>削除</button>
+		<button>決定</button><br>
+	</div>
+
+</div>
+
+	<div id="confirmation" align="right">
+		<button>確認</button><br>
+	</div>
+
+	<table class="display-table" >
+	<thead>
+		<tr>
+			<th width="80"></th>
+			<th width="50">表示</th>
+			<th width="100">問題ID</th>
+			<th>問題文</th>
+			<th width="30%">備考</th>
+		</tr>
+	</thead>
+  <tr>
+    <td><button>編集</button></td>
+    <td><input type="checkbox" value="" ></td>
+    <td><a href="">001</a></td>
+    <td>サンプル</td>
+    <td>テスト</td>
+  </tr>
+  <tr>
+    <td><button>編集</button></td>
+    <td><input type="checkbox" value="" ></td>
+    <td><a href="">002</a></td>
+    <td>サンプル</td>
+    <td>テスト</td>
+  </tr>
+</table>
+</form>
 
 </body>
 </html>

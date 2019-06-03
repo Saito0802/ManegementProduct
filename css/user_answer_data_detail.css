@@ -1,0 +1,28 @@
+@charset "UTF-8";
+form{
+	display:block;
+	width:100%;
+}
+
+#setting{
+	background: #cfe2f3;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;;
+	padding: 20px;
+
+}
+
+#data{
+	padding: 0.1em 0.2em;
+    margin: 2em 0;
+    border: solid 1px #000000;
+}
+
+table{
+	text-align: center;
+}
+
+.btn-excel{
+	float: right;
+}
