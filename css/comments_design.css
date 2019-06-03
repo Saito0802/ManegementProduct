@@ -53,29 +53,31 @@
 #infocomments{/* 表のヘッダー */
 	position: fixed;
     top: 200px;
-    left: 150px;
+    left: 120px;
     border: 1px solid #B9B9B9;
-    border-collapse: collapse
+    border-collapse: collapse;
+    font-size:18px;
 }
 
 #infocomments-data{/* 表の内容　スクロール可能 */
 	position: fixed;
     top: 252px;
-    left: 150px;
+    left: 120px;
     overflow: auto;
     height:300px;
+    font-size:18px;
 }
 
 .infocomments-number{/* 従業員番号の列 */
-	width:120px;
+	width:170px;
 	height:40px;
 }
 .infocomments-name{/* 従業員の名前の列 */
-	width:180px;
+	width:220px;
 	height:40px;
 }
 .infocomments-comments{/* 意見要望の列 */
-	width:500px;
+	width:540px;
 	height:40px;
 }
 
@@ -83,7 +85,7 @@
 #btn-excel-place{
 	position: fixed;
     top: 540px;
-    left: 780px;
+    left: 940px;
 }
 
 
