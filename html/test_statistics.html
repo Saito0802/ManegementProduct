@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="../css/test_statistics.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <meta charset="UTF-8">
+    <title>Test Statistics</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="header_space"></div>
+    <div class="breadcrumbs">
+        <!--パンくずリスト-->
+        <ul>
+            <li><a href="./management_top.html">Top</a></li>
+            <li><a href="./check_data.html">データ確認</a></li>
+            <li><a href="./test_statistics.html">テスト統計</a></li>
+        </ul>
+    </div>
+    <div class="my-body">
+        <div class="testset-block">
+            <span>テストセット</span>
+            <span id="testset-name">Pマーク2019</span>
+            <span id="testset-block__radio">
+                <input type="radio" name="old-new" checked>初回
+                <input type="radio" name="old-new">最新
+            </span>
+        </div>
+        <div class="table-block">
+            <!-- テーブル部分 -->
+            <table class="display-table">
+                <thead>
+                    <tr>
+                        <th>問題ID</th>
+                        <th>全社員</th>
+                        <th>東京本社</th>
+                        <th>大阪支社</th>
+                        <th>金沢支社</th>
+                        <th>名古屋支社</th>
+                        <th>静岡ブランチ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>問題1</td>
+                        <td>70%</td>
+                        <td>70%</td>
+                        <td>80%</td>
+                        <td>60%</td>
+                        <td>60%</td>
+                        <td>80%</td>
+                    </tr>
+                    <tr>
+                        <td>問題2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>問題3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class=excel-button-layout>
+            <a class="btn-excel">Excel 出力</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#header_space").load("header.html");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="../css/create_test.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <meta charset="UTF-8">
+    <title>Create Test 2</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="header_space"></div>
+    <div class="breadcrumbs">
+        <!--パンくずリスト-->
+        <ul>
+            <li><a href="./management_top.html">Top</a></li>
+            <li><a href="./create_test.html">テスト作成</a></li>
+        </ul>
+    </div>
+    <div class="my-body">
+        <div class="input-block">
+            <!-- インプットする部分 -->
+            <div class="input-block__test-set">
+                <span>テストセット名 :</span><input type="text">
+            </div>
+            <div class="input-block__test-border">
+                <span>合格ライン :</span><input type="text" size="1">%
+            </div>
+            <div class="input-block__test-period">
+                <span>開催期間 :</span><input type="text" size="6" class="datepicker">
+                <span>～</span>
+                <input type="text" size="6" class="datepicker">
+                <span id="input-block__choice-checkbox">
+                    選択しない:<input type="checkbox">
+                </span>
+            </div>
+            <div class="input-block__select-button">
+                <button>決定</button>
+            </div>
+        </div>
+        <div class="table-block">
+            <!-- テーブル部分 -->
+            <table class="display-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>テストセット名</th>
+                        <th>合格ライン</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><button>コピー</button></td>
+                        <td><button>編集</button></td>
+                        <td><a href="create_questions">Pマークテスト2018</a></td>
+                        <td>80%</td>
+                        <td><button>削除</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>コピー</button></td>
+                        <td><button>編集</button></td>
+                        <td><a href="create_questions">Pマークテスト2019</a></td>
+                        <td>80%</td>
+                        <td><button>削除</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>コピー</button></td>
+                        <td><button>編集</button></td>
+                        <td></td>
+                        <td></td>
+                        <td><button>削除</button></td>
+                    </tr>
+                    <tr>
+                        <td><button>コピー</button></td>
+                        <td><button>編集</button></td>
+                        <td></td>
+                        <td></td>
+                        <td><button>削除</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+    <script>
+        $(function() {
+            $(".datepicker").datepicker();
+            $("#header").load("header.html");
+            $("#header_space").load("header.html");
+        });
+    </script>
+</body>
+
+</html>

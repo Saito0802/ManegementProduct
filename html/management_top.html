@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="../css/management_top.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <meta charset="UTF-8">
+    <title>Management Top</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div id="header_space"></div>
+    <div class="breadcrumbs">
+        <!--パンくずリスト-->
+        <ul>
+            <li><a href="./management_top.html">Top</a></li>
+        </ul>
+    </div>
+    <div class="my-body">
+        <div class="table-block">
+            <!-- テーブル部分 -->
+            <table class="display-table">
+                <thead>
+                    <tr>
+                        <th>テストセット名</th>
+                        <th>開催期間 開始</th>
+                        <th>～終了</th>
+                        <th>状態</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>テストセット1</td>
+                        <td>2019/05/30</td>
+                        <td>2019/06/13</td>
+                        <td>開催中</td>
+                    </tr>
+                    <tr>
+                        <td>テストセット2</td>
+                        <td>2018/10/01</td>
+                        <td>2018/10/20</td>
+                        <td>実施済み</td>
+                    </tr>
+                    <tr>
+                        <td>テストセット3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>テストセット4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>テストセット5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#header_space").load("header.html");
+        });
+    </script>
+</body>
+
+</html>
