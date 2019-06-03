@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* ヘッダー以下の表示内容の位置固定 */
+.positionsinfo{
+	margin-top:70px;
+	margin-left:0px;
+}
+
+input {
+    vertical-align : middle;
+}
+/* 選択したテストセット名表示 */
+#testname-comments{
+	position: fixed;
+    top: 110px;
+    left: 80px;
+    font-size: 20px;
+}
+
+/* 選択された内容を表示するテキストボックス　枠なし */
+.choiseinfo{
+	font-size:20px;
+	border-width:0px;
+	border-style:None;
+	backgroundcolor:rgba(0,0,0,0);
+	min-width:20px;
+}
+
+.choiseinfo-date{/* 日付は文字位置を真ん中 */
+	font-size:20px;
+	border-width:0px;
+	border-style:None;
+	backgroundcolor:rgba(0,0,0,0);
+	text-align:center;
+	min-width:20px;
+}
+
+/* 公開設定期間 */
+#testinfo-comments{
+	position: fixed;
+    top: 130px;
+    left: 520px;
+    min-width:500px;
+}
+
+/* 各情報を囲むレイアウト */
+.surround {
+	padding : 2px;
+	padding-right: 10px;
+	border : 1px solid;
+	border-color : black;
+	border-radius : 5px;
+	disprai : block;
+	font-size:10px;
+}
+
+
+/* 表の位置・幅 */
+#infocomments{/* 表のヘッダー */
+	position: fixed;
+    top: 195px;
+    left: 120px;
+    border: 1px solid #B9B9B9;
+    border-collapse: collapse;
+    font-size:18px;
+}
+
+#infocomments-data{/* 表の内容　スクロール可能 */
+	position: fixed;
+    top: 247px;
+    left: 120px;
+    overflow: auto;
+    height:308px;
+    font-size:18px;
+}
+
+.infocomments-number{/* 従業員番号の列 */
+	min-width:170px;
+	height:40px;
+}
+.infocomments-name{/* 従業員の名前の列 */
+	min-width:180px;
+	height:40px;
+}
+.infocomments-comments{/* 意見要望の列 */
+	min-width:560px;
+	height:40px;
+}
+
+ #infocomments-data .infocomments-number{従業員番号の列 見出し以外は右寄せ
+	min-width:170px;
+	height:40px;
+	text-align:center;
+}
+#infocomments-data .infocomments-name{従業員の名前の列 見出し以外は真ん中
+	min-width:220px;
+	height:40px;
+	text-align:center;
+}
+
+/* Excel出力ボタンの位置 */
+#btn-excel-place{
+	position: fixed;
+    top: 540px;
+    left: 940px;
+}
+
+

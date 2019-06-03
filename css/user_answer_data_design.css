@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+/* ヘッダー以下の表示内容の位置固定 */
+.positionsinfo{
+	margin-top:70px;
+	margin-left:0px;
+}
+
+/* 選択したテストセット名表示 */
+#testname{
+	position: fixed;
+    top: 110px;
+    left: 80px;
+    font-size: 20px;
+}
+
+/* 選択された内容を表示するテキストボックス　枠なし */
+.choiseinfo{
+	font-size:20px;
+	border-width:0px;
+	border-style:None;
+	backgroundcolor:rgba(0,0,0,0);
+	min-width:20px;
+}
+
+.choiseinfo-date{/* 日付は文字位置を真ん中 */
+	font-size:20px;
+	border-width:0px;
+	border-style:None;
+	backgroundcolor:rgba(0,0,0,0);
+	text-align:center;
+	min-width:20px;
+}
+
+
+.choiseinfo-line{/* 日付は文字位置を真ん中 */
+	font-size:20px;
+	border-width:0px;
+	border-style:None;
+	backgroundcolor:rgba(0,0,0,0);
+	text-align:center;
+	min-width:10px;
+}
+
+/* 公開設定期間 */
+#testinfo{
+	position: fixed;
+    top: 175px;
+    left: 80px;
+    min-width:200px;
+}
+
+/* 初回・最新選択ボタン */
+#choicebutton{
+	position: fixed;
+    top: 175px;
+    left: 575px;
+    min-width:200px;
+}
+
+/* 合格設定ライン */
+#succesline{
+	position: fixed;
+    top: 175px;
+    left: 788px;
+    min-width:200px;
+}
+
+/* 各情報を囲むレイアウト */
+.surround {
+	padding : 2px;
+	padding-right: 10px;
+	border : 1px solid;
+	border-color : black;
+	border-radius : 5px;
+	disprai : block;
+	font-size:20px;
+}
+
+/* 表を入れてる表*/
+#info{
+	position: fixed;
+    top: 240px;
+    left: 200px;
+}
+
+/* 社員情報の表 */
+#infonames{
+    margin-left:40px;
+    font-size:20px;
+    border: 1px solid #B9B9B9;
+    border-collapse: collapse
+}
+#infonames th{
+	min-width:180px;
+	height:50px;
+}
+#infonames td{
+	min-width:180px;
+	height:50px;
+}
+
+/* Excel出力ボタンの位置 */
+#btn-excel-place{
+	position: fixed;
+    top: 240px;
+    left: 780px;
+}
+/* テスト詳細結果の表 */
+
+#result-data{/* 表の内容　スクロール可能 */
+   	position: fixed;
+    top: 380px;
+    left: 240px;
+    overflow: auto;
+    height:250px;
+}
+
+#result{
+    font-size:20px;
+}
+
+#result th{
+min-width: 60px;
+height: 45px;
+}
+
+#result td{
+min-width: 60px;
+height: 45px;
+}
+
+/* テスト結果の〇×の色変更 */
+.no{
+	color : blue;
+}
+.yes{
+	color : red;
+}
+
+/* Excel出力ボタン */
+a.btn-excel{
+  padding: 0.5em;
+  margin: 10px 0;
+  display: block;
+  color: #fff !important;
+  background: #3C78D8;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:16px;
+  border-radius: 10px;
+  text-align:center;
+  text-decoration:none !important;
+}
+a.btn-excel:before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: -3px 5px 0 0;
+  background: url("../img/excel_icon.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+a.btn-excel:hover {
+    background: #FFCE71;
+}
+
+@media screen and (min-width: 768px){
+  a.btn-excel{
+   /*  padding: 0.5em 2em; */
+    padding: 0.5em 0.8em;
+    margin: 10px auto;
+    font-size:20px;
+    display:inline-block;
+    }
+  a.btn-excel:before {
+        margin: -3px 10px 0 0;
+    }
+}
+
+/* リンクの色・下線 */
+table#result a { text-decoration: none;}
+table#result a:hover { text-decoration: underline;}
+
