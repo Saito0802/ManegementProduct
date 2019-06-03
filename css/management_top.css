@@ -1,20 +1,9 @@
-.display-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.display-table th {
-    border: 1px solid #B9B9B9;
-}
-
-.display-table td {
-    background: #C9DAF8;
-    border: 1px solid #B9B9B9;
-    border-collapse: collapse;
-}
-
 .table-block {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+}
+
+td {
+    text-align: center;
 }

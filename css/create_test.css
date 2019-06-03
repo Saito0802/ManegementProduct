@@ -1,32 +1,3 @@
-.display-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.display-table th {
-    border: 1px solid #B9B9B9;
-}
-
-.display-table td {
-    background: #C9DAF8;
-    border: 1px solid #B9B9B9;
-    border-collapse: collapse;
-}
-
-.display-table tr:nth-child(even) td {
-    background: #fff;
-}
-
-button {
-    background: #6D9EEB;
-    color: #FFF;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-}
-
 .my-body {
     position: absolute;
     top: 150px;
