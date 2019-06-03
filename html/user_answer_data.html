@@ -8,7 +8,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" >
 <link rel="stylesheet" href="../css/common.css">
-<link rel="stylesheet" href="../css/user_answer_data_detail.css">
+<link rel="stylesheet" href="../css/user_answer_data.css">
 <script>
 $(function() {
     $("#header").load("header.html");
@@ -22,32 +22,53 @@ $(function() {
 <div id="header_space"></div>
 
 <ul class="breadcrumbs">
-	<li><a href="">Top</a></li>
-	<li><a href="">データ確認</a></li>
-	<li><a href="">ユーザ解答データ</a></li>
+	<li><a href="./management_top.html">Top</a></li>
+	<li><a href="./check_data.html">データ確認</a></li>
+	<li><a href="./users_answer_data.html">ユーザ解答データ</a></li>
 </ul>
+
+
+<div id="mybody">
 <form>
 <div id="setting">
-	テストセット名： テストセット1<br>
-	公開設定期間：2019/05/28　～　2019/06/11
-	合格ライン：80%<br>
+	<label id="info">
+		テストセット名： テストセット1
+	</label>
+	<label id="info3">
+		合格ライン：80%
+	</label><br><br>
+	<label id="info2">
+		公開設定期間：2019/05/28　～　2019/06/11
+	</label>
+	<br><br>
 
-	<select name="branches">
-		<option value="全社員">全社員</option>
-		<option value="東京本社">東京本社</option>
-		<option value="大阪支社">大阪支社</option>
-	</select>
+	<div class="selectdiv">
+  <label>
+      <select>
+          <option value="0"  selected>全社員</option>
+			<option value="1">東京本社</option>
+			<option value="2">大阪支社</option>
+			<option value="3">金沢支社</option>
+			<option value="4">名古屋支社</option>
+			<option value="5">静岡ブランチ</option>
+      </select>
+  </label>
+</div>
+
 
 	<label id="data">
 		<input type="radio" name="data_check" value="first" checked="checked">初回
 		<input type="radio" name="data_check" value="latest" >最新
 	</label>
 
-	問題数 : 全20問<br>
+	<label id="question">問題数 : 全20問</label><br>
+
+
 </div>
 
 	<br>
 
+	<div id="my-table">
 	<table class="display-table" >
 	<thead>
 		<tr>
@@ -59,37 +80,41 @@ $(function() {
 		</tr>
 	</thead>
   <tr>
-    <td><a href="">000001</a></td>
+    <td><a href="./user_answer_data_detail.html">000001</a></td>
     <td>1</td>
     <td>合</td>
     <td>18</td>
     <td>1</td>
   </tr>
   <tr>
-    <td><a href="">000002</a></td>
+    <td><a href="./user_answer_data_detail.html">000002</a></td>
     <td>2</td>
     <td>否</td>
     <td>12</td>
     <td>1</td>
   </tr>
   <tr>
-    <td><a href="">000003</a></td>
+    <td><a href="./user_answer_data_detail.html">000003</a></td>
     <td>3</td>
     <td>合</td>
     <td>20</td>
     <td>3</td>
   </tr>
   <tr>
-    <td><a href="">000004</a></td>
+    <td><a href="./user_answer_data_detail.html">000004</a></td>
     <td>4</td>
     <td>合</td>
     <td>19</td>
     <td>2</td>
   </tr>
-</table>
+	</table>
+
 
 <a class="btn-excel">  Excel 出力</a>
+</div>
 
 </form>
+</div>
+
 </body>
 </html>
