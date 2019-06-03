@@ -1,19 +1,35 @@
 @charset "UTF-8";
-#create_quetions{
-
-	 margin-right: 200px
-
+#input_quetion{
+	background: #cfe2f3;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin-left:200px;
+	margin-right:200px;
+	padding: 20px;
 }
 
-#pass_line{
-	margin-right: 129px;
+#remarks{
+	margin-left: -5px;
+}
+#tag{
+	margin-left: 440px;
+}
+#choices input[type="checkbox"]{
+	margin-left: 150px;
 }
 
-#opening_period{
-	margin-left: 135px
+#create_button{
+	margin-top: 5px;
+}
+
+#confirmation{
+	margin-top: 10px;
+	margin-right: 400px;
 }
 
 table{
-	margin-left: auto;
-	margin-right: auto;
+	text-align: center;
+	margin: auto;
+	margin-top: 30px
 }

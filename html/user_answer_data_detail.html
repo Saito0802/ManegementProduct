@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ユーザ解答データ</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" >
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/user_answer_data_detail.css">
+<script>
+$(function() {
+    $("#header").load("header.html");
+    $("#datepicker").datepicker();
+});
+</script>
+
+</head>
+<body>
+<div id="header"></div>
+<div id="header_space"></div>
+
+<ul class="breadcrumbs">
+	<li><a href="">Top</a></li>
+	<li><a href="">データ確認</a></li>
+	<li><a href="">ユーザ解答データ</a></li>
+</ul>
+<form>
+	<div>
+	テストセット名： テストセット1
+	公開設定期間：2019/05/28　～　2019/06/11
+	合格ライン：80%<br>
+
+	<select name="branches">
+		<option value="全社員">全社員</option>
+		<option value="東京本社">東京本社</option>
+		<option value="大阪支社">大阪支社</option>
+	</select>
+
+	<label>
+		<input type="radio" name="data_check" value="first" checked="checked">初回
+		<input type="radio" name="data_check" value="latest" >最新
+	</label>
+
+	問題数 : 全20問<br>
+
+
+	<table border="1">
+	<thead>
+		<tr>
+			<th >社員番号</th>
+			<th>ユーザ名</th>
+			<th>合否</th>
+			<th>正解数</th>
+			<th>受験回数</th>
+		</tr>
+	</thead>
+  <tr>
+    <td><a href="">000001</a></td>
+    <td>1</td>
+    <td>合</td>
+    <td>18</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td><a href="">000002</a></td>
+    <td>2</td>
+    <td>否</td>
+    <td>12</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td><a href="">000003</a></td>
+    <td>3</td>
+    <td>合</td>
+    <td>20</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td><a href="">000004</a></td>
+    <td>4</td>
+    <td>合</td>
+    <td>19</td>
+    <td>2</td>
+  </tr>
+</table>
+
+<input type="button" value="Excel出力">
+
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>テストセット内容確認</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" >
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/confirm_test_contents.css">
+<script>
+$(function() {
+    $("#header").load("header.html");
+});
+</script>
+</head>
+<body>
+
+<div id="header"></div>
+<div id="header_space"></div>
+
+
+<div id="confirm">
+	内容確認<br>
+	テストセット名1 : テストセット1<br>
+	合格ライン      : 80 %<br>
+	開催期間        : 2019/05/28 ～ 2019/06/11<br>
+	表示問題数      : 20 問<br>
+</div>
+
+<div id="confirm_test_button">
+	上記の内容で決定しますか？
+	<input type="button" value="決定">
+	<input type="button" value="修正">
+</div>
+
+</body>
+</html>
