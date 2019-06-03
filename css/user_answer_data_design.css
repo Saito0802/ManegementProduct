@@ -1,128 +1,148 @@
 @charset "UTF-8";
 
-.breadcrubs {
-  padding-left:0;
-  margin-left:0;
-}
-
-.breadcrubs li{
-  display:inline;/*横に並ぶように*/
-  list-style: none;
-  font-weight: bold;/*太字*/
-}
-
-.breadcrubs li:after {/* >を表示*/
-  content: '>';
-  padding: 0 3px;
-  color: #555;
-}
-
-.breadcrubs li:last-child:after {
-  content: '';
-}
-
-.breadcrubs li a {
-  text-decoration: none;
-  color: #52b5ee;/*色*/
-}
-
-.breadcrubs li a:hover {
-  text-decoration: underline;
-}
-
-.surround {
-	padding : 2px;
-	padding-right: 5px;
-	border : 1px solid;
-	border-color : black;
-	border-radius : 5px;
-	disprai : block;
-}
-
-.excelbutton{
- width:200px;
- height:80px;
- line-height:30px;
- text-align:center;
- display:inline-block;
- background:#3C78D8;
- color:white;
- font-size:20px;
- border-radius:5px;
- text-decoration:none;
- margin-right:10px;
-}
-
-.no{
-	color : blue;
-}
-
-.yes{
-	color : red;
-}
-
-/* #info{
-width: 500px;
-height: 100px;
-margin-left:10px;
-} */
-
-#infonames{
-    margin-left:100px;
-}
-#infonames th{
-	width:200px;
-	height:60px;
-}
-#infonames td{
-	width:200px;
-	height:60px;
-}
-
-#result{
-/* width: 500px;
-height: 300px; */
-margin-left:100px;
-font-size:20px;
-}
-
-#result th{
-width: 80px;
-height: 80px;
-}
-
-#result td{
-width: 80px;
-height: 80px;
-}
-
-
-
-
-
+/* ヘッダー以下の表示内容の位置固定 */
 .positionsinfo{
 	margin-top:70px;
 	margin-left:0px;
 }
-#testinfo{
-/* 	position:absolute;
-	left:25px; */
-}
-#choicebutton{
-/* 	position:absolute;
-	left:400px; */
-	margin-left:10px;
-}
-#succesline{
-/* 	position:absolute;
-	left:550px; */
-	margin-left:0px;
-}
+
+/* 選択したテストセット名表示 */
 
 #testname{
+	position: fixed;
+    top: 110px;
+    left: 80px;
+}
+
+#choisetestname{
 	font-size:20px;
 	border-width:0px;
 	border-style:None;
 	backgroundcolor:rgba(0,0,0,0);
 }
 
+/* 公開設定期間 */
+#testinfo{
+	position: fixed;
+    top: 175px;
+    left: 80px;
+}
+
+/* 初回・最新選択ボタン */
+#choicebutton{
+	position: fixed;
+    top: 175px;
+    left: 575px;
+}
+
+/* 合格設定ライン */
+#succesline{
+	position: fixed;
+    top: 175px;
+    left: 788px;
+}
+
+/* 各情報を囲むレイアウト */
+.surround {
+	padding : 2px;
+	padding-right: 10px;
+	border : 1px solid;
+	border-color : black;
+	border-radius : 5px;
+	disprai : block;
+	font-size:20px;
+}
+
+/* 表を入れてる表*/
+#info{
+	position: fixed;
+    top: 240px;
+    left: 200px;
+}
+
+/* 社員情報の表 */
+#infonames{
+    margin-left:40px;
+    font-size:20px;
+}
+#infonames th{
+	width:180px;
+	height:50px;
+}
+#infonames td{
+	width:180px;
+	height:50px;
+}
+
+/* Excel出力ボタンの位置 */
+#btn-excel-place{
+	position: fixed;
+    top: 240px;
+    left: 780px;
+}
+/* テスト詳細結果の表 */
+#result{
+	position: fixed;
+    top: 380px;
+    left: 240px;
+    font-size:20px;
+}
+
+#result th{
+width: 60px;
+height: 45px;
+}
+
+#result td{
+width: 60px;
+height: 45px;
+}
+
+/* テスト結果の〇×の色変更 */
+.no{
+	color : blue;
+}
+.yes{
+	color : red;
+}
+
+/* Excel出力ボタン */
+a.btn-excel{
+  padding: 0.5em;
+  margin: 10px 0;
+  display: block;
+  color: #fff !important;
+  background: #3C78D8;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:16px;
+  border-radius: 10px;
+  text-align:center;
+  text-decoration:none !important;
+}
+a.btn-excel:before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: -3px 5px 0 0;
+  background: url("../img/excel_icon.png") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+a.btn-excel:hover {
+    background: #FFCE71;
+}
+
+@media screen and (min-width: 768px){
+  a.btn-excel{
+   /*  padding: 0.5em 2em; */
+    padding: 0.5em 0.8em;
+    margin: 10px auto;
+    font-size:20px;
+    display:inline-block;
+    }
+  a.btn-excel:before {
+        margin: -3px 10px 0 0;
+    }
+}

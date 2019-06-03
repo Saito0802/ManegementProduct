@@ -8,176 +8,165 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script>
 
-			$(function (){
-				$('#header').load("./header.html");
-           	 });
+		$(function (){
+			$('#header').load("./header.html");
+       	});
 
 
 
     </script>
 </head>
 <body>
-<div id = "header"></div>
+
+	<!-- ヘッド読み込み -->
+	<div id = "header"></div>
+
+	<!-- 以下ページ内容 -->
+	<div class = "positionsinfo">
 
 
-<div class = "positionsinfo">
+	    <!-- パンくずリスト -->
+		<nav>
+			<ul class="breadcrumbs">
+				<li><a href = "" >Top</a></li>
+				<li><a href = "" >データ確認</a></li>
+				<li><a href = "" >ユーザ解答データ</a></li>
+				<li><a href = "">ユーザ解答詳細データ</a></li>
+			</ul>
+		</nav>
 
-    <!-- パンくずリスト -->
-	<nav>
-		<ol class="breadcrumbs">
-			<li class = "breada"><a href = "" class = "breadb">Top</a></li>
-			<li class = "breada"><a href = "" class = "breadb">データ確認</a></li>
-			<li class = "breada"><a href = "" class = "breadb">ユーザ解答データ</a></li>
-			<li class = "breada"><a href = "" class = "breadb">ユーザ解答詳細データ</a></li>
-		</ol>
-	</nav>
+	    <!-- 段落空白用のＰタグ -->
+		<p style="line-height : 170%;"></p>
 
+		<!-- 選択したテストセット名の表示 -->
+		<p id = "testname">テストセット名：　　<input type = text id = "choisetestname" value = "テストセット１" ></p>
 
-<p style="line-height : 170%;"></p>
+	    <p style="line-height : 170%;"></p>
 
+		<!-- 公開設定期間表示 -->
+	    <span>　</span><span class = "surround" id = "testinfo">
+	    公開設定期間　2019/05/28 ～ 2019/06/11
+		</span>
 
+		　　　
 
-	テストセット名：<input type = text id = "testname" value = "テストセット１" >
+		<!-- 初回か最新かチェックするラジオボタン -->
+		<span class = "surround" id = "choicebutton">
+	    <input type = "radio" name = "choise" value = "初回">初回
+	    <input type = "radio" name = "choise" value = "最新">最新
+		</span>
 
+		　　　
 
-    <p style="line-height : 170%;"></p>
+		<!-- 合格基準を表示 -->
+		<span class = "surround" id = "succesline">
+	    合格ライン　80 %
+		</span>
 
-    <span class = "surround" id = "testinfo" style = "float:left">
-    公開設定期間　2019/05/28 ～ 2019/06/11
-	</span>
-
-	　　　
-
-	<span class = "surround" id = "choicebutton">
-    <input type = "radio" name = "choise" value = "初回">初回
-    <input type = "radio" name = "choise" value = "最新">最新
-	</span>
-
-	　　　
-
-	<span class = "surround" id = "succesline">
-    合格ライン　80 %
-	</span>
-
-
-
-	<p style="line-height : 300%;"></p>
+		<p style="line-height : 300%;"></p>
 
 
-    <table id = "info">
-	    <tr>
-	    	<td>
-				<table border="1" cellpadding="5" cellspacing="0" style = "float:left" id = "infonames">
-					<tr>
-						<th>社員番号 ： </th>
-						<td>000001</td>
-					</tr>
-					<tr>
-						<th>社員名 ： </th>
-						<td>山田太郎</td>
-					</tr>
-				</table>
-			</td>
- 		    <td>
-				<table style = "float:left">
-					<tr>
-						<th>　　</th>
-						<td>　　</td>
-					</tr>
-					<tr>
-						<th>　　</th>
-						<td>　　</td>
-					</tr>
-				</table>
-			</td>
-			<td>
-				<table style = "float:left">
-					<tr>
-						<th>　　</th>
-						<td>　　</td>
-					</tr>
-					<tr>
-						<th>　　</th>
-						<td>　　</td>
+		<table>
+
+ 		    <tr>
+		    	<td><p style="line-height : 300%;"></p></td>
+		    </tr>
+
+			<tr><td>
+			    <table id = "info">
+				    <tr>
+				    	<td>
+							<table border="1" cellpadding="5" cellspacing="0" id = "infonames">
+								<tr align="center">
+									<th>社員番号 ： </th>
+									<td>000001</td>
+								</tr>
+								<tr align="center">
+									<th>社員名 ： </th>
+									<td>山田太郎</td>
+								</tr>
+							</table>
+						</td>
+                    <tr>
+						<td>
+							<table id = "btn-excel-place">
+								<tr>
+									<td>
+										<a href="./header.html" class="btn-excel">  Excel 出力</a>
+									</td>
+								</tr>
+							</table>
+						</td>
 					</tr>
 				</table>
-			</td>
-		    <td>
-				<table style = "float:left">
+		    </td></tr>
+
+		    <tr>
+		    	<td><p style="line-height : 300%;"></p></td>
+		    </tr>
+
+			<tr><td>
+				<table border="1" cellpadding="5" cellspacing="0" id = "result">
 					<tr>
-						<th>　　</th>
-						<td>　　</td>
+						<th><a href = "" >1</a></th>
+						<th><a href = "" >2</a></th>
+						<th><a href = "" >3</a></th>
+						<th><a href = "" >4</a></th>
+						<th><a href = "" >5</a></th>
+						<th><a href = "" >6</a></th>
+						<th><a href = "" >7</a></th>
+						<th><a href = "" >8</a></th>
+						<th><a href = "" >9</a></th>
+						<th><a href = "" >10</a></th>
+					</tr>
+					<tr align="center">
+						<td class = "no">×</td>
+						<td class = "yes">〇</td>
+						<td class = "no">×</td>
+						<td class = "yes">〇</td>
+						<td class = "yes">〇</td>
+						<td class = "yes">〇</td>
+						<td class = "yes">〇</td>
+						<td class = "yes">〇</td>
+						<td class = "yes">〇</td>
+						<td class = "yes">〇</td>
 					</tr>
 					<tr>
-						<th>　　</th>
-						<td>　　</td>
+						<th><a href = "" >11</a></th>
+						<th><a href = "" >12</a></th>
+						<th><a href = "" >13</a></th>
+						<th><a href = "" >14</a></th>
+						<th><a href = "" >15</a></th>
+						<th><a href = "" >16</a></th>
+						<th><a href = "" >17</a></th>
+						<th><a href = "" >18</a></th>
+						<th><a href = "" >19</a></th>
+						<th><a href = "" >20</a></th>
+					</tr>
+					<tr align="center">
+						<td class = "yes">〇</td>
+						<td class = "yes">〇</td>
+						<td class = "yes">〇</td>
+						<td class = "yes">〇</td>
+						<td class = "yes">〇</td>
+						<td class = "yes">〇</td>
+						<td class = "yes">〇</td>
+						<td class = "yes">〇</td>
+						<td class = "yes">〇</td>
+						<td class = "yes">〇</td>
 					</tr>
 				</table>
-			</td>
-			<td>
+			</td></tr>
+		</table>
 
-				<table>
-					<tr><td><input type = "button" value = "Excel 出力" class = "excelbutton"></td></tr>
-				</table>
-			</td>
 
-		</tr>
-	</table>
-
-	<p style="line-height : 170%;"></p>
-
-	<table border="1" cellpadding="5" cellspacing="0" align = "center" id = "result">
-		<tr>
-			<th>1</th>
-			<th>2</th>
-			<th>3</th>
-			<th>4</th>
-			<th>5</th>
-			<th>6</th>
-			<th>7</th>
-			<th>8</th>
-			<th>9</th>
-			<th>10</th>
-		</tr>
-		<tr align="center">
-			<td class = "no">×</td>
-			<td class = "yes">〇</td>
-			<td class = "no">×</td>
-			<td class = "yes">〇</td>
-			<td class = "yes">〇</td>
-			<td class = "yes">〇</td>
-			<td class = "yes">〇</td>
-			<td class = "yes">〇</td>
-			<td class = "yes">〇</td>
-			<td class = "yes">〇</td>
-		</tr>
-		<tr>
-			<th>11</th>
-			<th>12</th>
-			<th>13</th>
-			<th>14</th>
-			<th>15</th>
-			<th>16</th>
-			<th>17</th>
-			<th>18</th>
-			<th>19</th>
-			<th>20</th>
-		</tr>
-		<tr align="center">
-			<td class = "yes">〇</td>
-			<td class = "yes">〇</td>
-			<td class = "yes">〇</td>
-			<td class = "yes">〇</td>
-			<td class = "yes">〇</td>
-			<td class = "yes">〇</td>
-			<td class = "yes">〇</td>
-			<td class = "yes">〇</td>
-			<td class = "yes">〇</td>
-			<td class = "yes">〇</td>
-		</tr>
-	</table>
 
 	</div>
 
+
 </body>
 </html>
+
+
+
+
