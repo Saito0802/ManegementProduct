@@ -6,7 +6,6 @@
 	margin-left:0px;
 }
 
-
 /* 選択したテストセット名表示 */
 #testname-comments{
 	position: fixed;
@@ -14,6 +13,7 @@
     left: 80px;
 }
 
+/* 選択された内容を表示するテキストボックス　枠なし */
 .choiseinfo{
 	font-size:20px;
 	border-width:0px;
@@ -41,13 +41,13 @@
 
 
 /* 表の位置・幅 */
-#infocomments{
+#infocomments{/* 表のヘッダー */
 	position: fixed;
     top: 200px;
     left: 150px;
 }
 
-#infocomments-data{
+#infocomments-data{/* 表の内容　スクロール可能 */
 	position: fixed;
     top: 252px;
     left: 150px;
@@ -55,15 +55,15 @@
     height:300px;
 }
 
-.infocomments-number{
+.infocomments-number{/* 従業員番号の列 */
 	width:120px;
 	height:40px;
 }
-.infocomments-name{
+.infocomments-name{/* 従業員の名前の列 */
 	width:180px;
 	height:40px;
 }
-.infocomments-comments{
+.infocomments-comments{/* 意見要望の列 */
 	width:480px;
 	height:40px;
 }
