@@ -163,3 +163,8 @@ a.btn-excel:hover {
         margin: -3px 10px 0 0;
     }
 }
+
+/* リンクの色・下線 */
+table#result a { text-decoration: none;}
+table#result a:hover { text-decoration: underline;}
+
