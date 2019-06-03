@@ -33,53 +33,50 @@ $(function() {
 		テストセット1<br>
 
 	<div>
-		<label for="question"> 問題文   ：</label>
-		<input type="text" name="question" size="50" id="question"><br>
-		<label for="remarks">　 備考 ：</label>
-		<input type="text" name="remarks" size="50" id="remarks">
-		<label id="tag">正解ラベル</label><br>
+		<label for="question"> 問題文   ：</label><br>
+		<textarea name="question" rows="2" cols="100" id="question"></textarea><br>
+		<label for="remarks">備考 ：</label><br>
+		<textarea name="question"  rows="2" cols="100" id="remarks"></textarea>
 	</div>
 
 	<div id="choices">
-		<label for="choice1">選択肢1 : </label>
-			<input type="text" name="choice1" size="100" id="choice1">
-			<input type="checkbox"><br>
-		<label for="choice2">選択肢2 : </label>
-			<input type="text" name="choice2" size="100" id="choice2">
-			<input type="checkbox" ><br>
+		<label for="choice1">選択肢1　</label>正答チェック<input type="checkbox"><br>
+			<textarea name="question" rows="3" cols="100" id="choice1"></textarea><br>
+		<label for="choice2">選択肢2　</label>正答チェック<input type="checkbox"><br>
+			<textarea name="question" rows="3" cols="100" id="choice2"></textarea>
 	</div>
-		<input type="button" value="-">
-		<input type="button" value="+">
+		<button>－</button>
+		<button>＋</button>
 	<div id="create_button" align="right">
-		<input type="button" value="削除" >
-		<input type="button" value="追加" ><br>
+		<button>削除</button>
+		<button>決定</button><br>
 	</div>
 
 </div>
 
 	<div id="confirmation" align="right">
-		<input type="button" value="確認" ><br>
+		<button>確認</button><br>
 	</div>
 
-	<table border="1">
+	<table class="display-table" >
 	<thead>
 		<tr>
-			<th ></th>
-			<th>表示</th>
-			<th>問題ID</th>
+			<th width="80"></th>
+			<th width="50">表示</th>
+			<th width="100">問題ID</th>
 			<th>問題文</th>
-			<th>備考</th>
+			<th width="30%">備考</th>
 		</tr>
 	</thead>
   <tr>
-    <td><input type="button" value="編集" ></td>
+    <td><button>編集</button></td>
     <td><input type="checkbox" value="" ></td>
     <td><a href="">001</a></td>
     <td>サンプル</td>
     <td>テスト</td>
   </tr>
   <tr>
-    <td><input type="button" value="編集" ></td>
+    <td><button>編集</button></td>
     <td><input type="checkbox" value="" ></td>
     <td><a href="">002</a></td>
     <td>サンプル</td>

@@ -27,8 +27,8 @@ $(function() {
 	<li><a href="">ユーザ解答データ</a></li>
 </ul>
 <form>
-	<div>
-	テストセット名： テストセット1
+<div id="setting">
+	テストセット名： テストセット1<br>
 	公開設定期間：2019/05/28　～　2019/06/11
 	合格ライン：80%<br>
 
@@ -38,15 +38,17 @@ $(function() {
 		<option value="大阪支社">大阪支社</option>
 	</select>
 
-	<label>
+	<label id="data">
 		<input type="radio" name="data_check" value="first" checked="checked">初回
 		<input type="radio" name="data_check" value="latest" >最新
 	</label>
 
 	問題数 : 全20問<br>
+</div>
 
+	<br>
 
-	<table border="1">
+	<table class="display-table" >
 	<thead>
 		<tr>
 			<th >社員番号</th>
@@ -86,9 +88,8 @@ $(function() {
   </tr>
 </table>
 
-<input type="button" value="Excel出力">
+<a class="btn-excel">  Excel 出力</a>
 
-</div>
 </form>
 </body>
 </html>
